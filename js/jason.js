@@ -54,12 +54,10 @@
                 winW = $(window).innerWidth();
                 if( winW > 1024 ){
                     topPos = 124;
-                    // $('.sub').stop().slideUp(0);
                     $('#nav').stop().show(0).animate({top:(s*topPos)},300);
                 }
                 else if( winW > 780 ){
                     topPos = 84;
-                    // $('.sub').stop().slideUp(0);
                     $('#nav').stop().show(0).animate({top:(s*topPos)},300);
                 }
                 else{
