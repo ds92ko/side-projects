@@ -65,12 +65,10 @@
                     $('.sub').stop().slideDown(0);
                     $('#nav').stop().animate({top:0},0);
                     if(m==1){
-                        // $('#nav').stop().show(0);
                         $('#nav').stop().slideDown();
                         $('html').stop().addClass('addScroll');
                     }
                     else{
-                        // $('#nav').stop().hide(0);
                         $('#nav').stop().slideUp();
                         $('html').stop().removeClass('addScroll');
                     }
