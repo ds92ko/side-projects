@@ -21,6 +21,10 @@
     #main .section2345 .wrap .gap .container .title h2 {font-size:30px;}
 
     #main #section5 .wrap .gap .container ul li {width:33.333%;}
+
+    #login #section2 .wrap .gap .container .content > ul > li {float:left;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h3 {font-size:17px;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h2 {font-size:35px;}
 }
 
 @media all and (max-width:1024px){
@@ -77,6 +81,13 @@
 
     #footer .wrap .gap .container .content .right-wrap .address-row2 address {font-size:11px;}
     #footer .wrap .gap .container .content .right-wrap .address-row2 address span {font-size:11px;}
+
+    #login #section2 .wrap .gap .container .content > ul > li {float:none;margin:0 auto;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1),
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(3) {width:80%;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(2) {width:80%;min-width:320px;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h3 {font-size:16px;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h2 {font-size:30px;}
 }
 
 @media all and (max-width:780px){
@@ -170,6 +181,13 @@
     #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .txt-wrap .txt-gap .slide-txt h3 {font-size:13px;}
 
     #main #section5 .wrap .gap .container ul li {width:50%;}
+
+    #login #section2 .wrap .gap .container .content > ul > li {float:none;margin:0 auto;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1),
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(3) {width:100%;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(2) {width:100%;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h3 {font-size:16px;}
+    #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h2 {font-size:30px;}
 }
 
 @media all and (max-width:400px){

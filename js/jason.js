@@ -7,7 +7,7 @@
             that.section2Fn();
             that.section3Fn();
             that.section4Fn();
-            that.section5Fn();
+            that.loginFormFn();
         },
         headerFn: function(){
             var winW = $(window).innerWidth();
@@ -37,7 +37,7 @@
                     $('#header').stop().addClass('addHeader');
                     if(t===false){
                         t=true;
-                        $('html,body').stop().animate({ scrollTop:$('#section2').offset().top-headerH },600,'easeInOutExpo');
+                        $('html,body').stop().animate({ scrollTop:$('#section2').offset().top-headerH },600/* ,'easeInOutExpo' */);
                     }
                 }
                 else{
@@ -119,7 +119,7 @@
         },
         section1Fn: function(){
             var cnt = 0; //증가변수니까 반드시 초기값 0
-            var n = $('#section1 .slide').length-2;
+            var n = $('#main #section1 .slide').length-2;
             var setId = null; //증가변수가 아니니까 초기값 0말고 null도 가능
             var setId2 = null;
             var s = 4; //4초간격 변수
@@ -131,10 +131,10 @@
             
             //main slide
             function mainSlideFn(){
-                $('#section1 .slide-wrap').stop().animate({left:-(100*cnt)+'%'},600,function(){
+                $('#main #section1 .slide-wrap').stop().animate({left:-(100*cnt)+'%'},600,function(){
                     if(cnt>n-1){cnt=0;} //index는 항상 0부터 시작이니까 -1
                     if(cnt<0){cnt=n-1;}
-                    $('#section1 .slide-wrap').stop().animate({left:-(100*cnt)+'%'},0);
+                    $('#main #section1 .slide-wrap').stop().animate({left:-(100*cnt)+'%'},0);
                 });
                 //page btn Fn 호출(매개변수)
                 pageBtnFn(cnt);
@@ -176,36 +176,36 @@
                 z==4?z=0:z;
                 z==-1?z=3:z;
                 //console.log(z);
-                $('#section1 .page-btn').removeClass('addCurrent');
-                $('#section1 .page-btn').eq(z).addClass('addCurrent');
+                $('#main #section1 .page-btn').removeClass('addCurrent');
+                $('#main #section1 .page-btn').eq(z).addClass('addCurrent');
             }
 
             //next btn click event
-            $('#section1 .next-btn').on({
+            $('#main #section1 .next-btn').on({
                 click: function(event){
                     event.preventDefault();
                     clearInterval(setId); //슬라이드 자동재생 정지
                     timerFn();
-                    if(!$('#section1 .slide-wrap').is(':animated')){
+                    if(!$('#main #section1 .slide-wrap').is(':animated')){
                         nextCountFn();
                     }
                 }
             });
 
             //prev btn click event
-            $('#section1 .prev-btn').on({
+            $('#main #section1 .prev-btn').on({
                 click: function(event){
                     event.preventDefault();
                     clearInterval(setId); //슬라이드 자동재생 정지
                     timerFn();
-                    if(!$('#section1 .slide-wrap').is(':animated')){
+                    if(!$('#main #section1 .slide-wrap').is(':animated')){
                         prevCountFn();
                     }
                 }
             });
 
             //page btn click event
-            $('#section1 .page-btn').each(function(index){
+            $('#main #section1 .page-btn').each(function(index){
                 $(this).on({
                     click: function(event){
                         event.preventDefault();
@@ -218,12 +218,12 @@
             });
 
             //touch swipe event
-            $('#section1').swipe({
+            $('#main #section1').swipe({
                 swipeLeft: function(event){ //R -> L / next
                     event.preventDefault();
                     clearInterval(setId);
                     timerFn();
-                    if(!$('#section1 .slide-wrap').is(':animated')){
+                    if(!$('#main #section1 .slide-wrap').is(':animated')){
                         nextCountFn();
                     }
                 },
@@ -231,7 +231,7 @@
                     event.preventDefault();
                     clearInterval(setId);
                     timerFn();
-                    if(!$('#section1 .slide-wrap').is(':animated')){
+                    if(!$('#main #section1 .slide-wrap').is(':animated')){
                         prevCountFn();
                     }
                 }
@@ -239,9 +239,7 @@
 
             setTimeout(autoTimerFn,10);
 
-            ////////////////////////////////////////////////////////////////////
-
-            //smooth btn
+            //smooth btn////////////////////////////////////////////////////////////////////
             $('.smooth-btn').on({
                 click: function(event){
                     event.preventDefault();
@@ -251,15 +249,15 @@
                 }
             });
 
-            ////////////////////////////////////////////////////////////////////
+            //resize//////////////////////////////////////////////////////////////////
 
             function resizeFn(){  
                 winW = $(window).innerWidth(); //새로고침 안해도 즉시 적용
                 winH = $(window).innerHeight();//새로고침 안해도 즉시 적용
                 
                 $('#section1').css({ height:winH });
-                $('#section2').css({ marginTop:winH });
-                $('#section1 .slide').css({ width:winW });
+                $('#main #section2').css({ marginTop:winH });
+                $('#main #section1 .slide').css({ width:winW });
             }
 
             $(window).resize(function(){
@@ -269,13 +267,13 @@
             setTimeout(resizeFn,0);
         },
         section2Fn: function(){
-            var galW = $('.gal li').width();
+            var galW = $('#main .gal li').width();
             var galH = galW*0.8694621946372336;
 
             function resizeFn(){
-                galW = $('.gal li').width();
+                galW = $('#main .gal li').width();
                 galH = galW*0.8694621946372336;
-                $('.gal li').css({height:galH});
+                $('#main .gal li').css({height:galH});
             };
 
             $(window).resize(function(){
@@ -288,25 +286,25 @@
             //slide view box
             //window width가 1360이하면 box height 자동 설정
             var winW = $(window).innerWidth();
-            var pageBtnW = $('#section3 .page-btn').innerWidth();
-            var slideImgW = $('#section3 .slide-img').innerWidth();
+            var pageBtnW = $('#main #section3 .page-btn').innerWidth();
+            var slideImgW = $('#main #section3 .slide-img').innerWidth();
             var cnt = 0;
             var setId = null;
-            var n = $('#section3 .slide').length-1;
+            var n = $('#main #section3 .slide').length-1;
             var a = [1,2];
             
             function resizeFn(){
                 winW = $(window).innerWidth();
-                pageBtnW = $('#section3 .page-btn').innerWidth();
-                slideImgW = $('#section3 .slide-img').innerWidth();
+                pageBtnW = $('#main #section3 .page-btn').innerWidth();
+                slideImgW = $('#main #section3 .slide-img').innerWidth();
                 
                 if(winW<=1360){
-                    $('#section3 .slide-img').css({height:slideImgW});
-                    $('#section3 .page-wrap').css({height:pageBtnW});
-                    $('#section3 .slide-view').css({height:winW*0.419117647});
+                    $('#main #section3 .slide-img').css({height:slideImgW});
+                    $('#main #section3 .page-wrap').css({height:pageBtnW});
+                    $('#main #section3 .slide-view').css({height:winW*0.419117647});
                 }
                 else{
-                    $('#section3 .slide-view').css({height:570});
+                    $('#main #section3 .slide-view').css({height:570});
                 }
             }
 
@@ -321,18 +319,18 @@
             //1-1 Next Slide
             function mainNextSlideFn(){
                 //console.log(cnt);
-                $('#section3 .slide').css({zIndex:1}); //모든 슬라이드 (초기화)
-                $('#section3 .slide').eq(cnt==0?n:cnt-1).css({zIndex:2}); //이전 슬라이드
-                $('#section3 .slide').eq(cnt).css({zIndex:3}).stop().animate({opacity:0},0).animate({opacity:1},1000); //현재 슬라이드
+                $('#main #section3 .slide').css({zIndex:1}); //모든 슬라이드 (초기화)
+                $('#main #section3 .slide').eq(cnt==0?n:cnt-1).css({zIndex:2}); //이전 슬라이드
+                $('#main #section3 .slide').eq(cnt).css({zIndex:3}).stop().animate({opacity:0},0).animate({opacity:1},1000); //현재 슬라이드
                 pageBtnFn();
             }
 
             //1-2 Prev Slide
             function mainPrevSlideFn(){
                 //console.log(cnt);
-                $('#section3 .slide').css({zIndex:1,opacity:1}); //모든 슬라이드 (초기화)
-                $('#section3 .slide').eq(cnt).css({zIndex:2}); //이전 슬라이드
-                $('#section3 .slide').eq(cnt==n?0:cnt+1).css({zIndex:3}).stop().animate({opacity:1},0).animate({opacity:0},1000); //현재 슬라이드
+                $('#main #section3 .slide').css({zIndex:1,opacity:1}); //모든 슬라이드 (초기화)
+                $('#main #section3 .slide').eq(cnt).css({zIndex:2}); //이전 슬라이드
+                $('#main #section3 .slide').eq(cnt==n?0:cnt+1).css({zIndex:3}).stop().animate({opacity:1},0).animate({opacity:0},1000); //현재 슬라이드
                 pageBtnFn();
             }
             
@@ -355,7 +353,7 @@
             }
 
             //3-1 next Btn Click Event
-            $('#section3 .next-btn').on({
+            $('#main #section3 .next-btn').on({
                 click: function(event){
                     event.preventDefault();
                     nextCountFn();
@@ -363,7 +361,7 @@
             });
 
             //3-2 prev Btn Click Event
-            $('#section3 .prev-btn').on({
+            $('#main #section3 .prev-btn').on({
                 click: function(event){
                     event.preventDefault();
                     prevCountFn();
@@ -409,12 +407,12 @@
                         a=[0,1];
                 }
                 for(i=0;i<a.length;i++){
-                    $('#section3 .page-btn').eq(i).css({backgroundImage:'url(./img/s3_slide'+a[i]+'.jpg)'});
+                    $('#main #section3 .page-btn').eq(i).css({backgroundImage:'url(./img/s3_slide'+a[i]+'.jpg)'});
                 }
             }
 
             //5-1 page Btn Click Event
-            $('#section3 .page-btn').each(function(index){
+            $('#main #section3 .page-btn').each(function(index){
                 $(this).on({
                     click: function(event){
                         event.preventDefault();
@@ -442,32 +440,32 @@
             });
         },
         section4Fn: function(){
-            var totN = $('#section4 .slide').length;
+            var totN = $('#main #section4 .slide').length;
             var slideN = 3; //보여지는 슬라이드 개수 -> PC(1024초과) 3개 / 태블릿(1024이하) 2개 / 모바일(680이하) 1개 
-            var slideW = $('#section4 .slide-container').innerWidth()/slideN;
+            var slideW = $('#main #section4 .slide-container').innerWidth()/slideN;
             var cnt = 0;
             var setId = null;
             var setId2 = null;
             
                 //slide container의 width값에 따른 slide 3개의 width값 구하기
                 function resizeFn(){
-                    if($('#section4 .slide-container').innerWidth()>1024){
+                    if($('#main #section4 .slide-container').innerWidth()>1024){
                         slideN = 3;
                     }
-                    else if($('#section4 .slide-container').innerWidth()>680){
+                    else if($('#main #section4 .slide-container').innerWidth()>680){
                         slideN = 2;
                     }
                     else{
                         slideN = 1;
                     }
 
-                    slideW = $('#section4 .slide-container').innerWidth()/slideN;
+                    slideW = $('#main #section4 .slide-container').innerWidth()/slideN;
 
-                    $('#section4 .slide-wrap').css({width:(slideW*totN),marginLeft:-(slideW*3)});
-                    $('#section4 .slide').css({width:slideW,height:slideW});
-                    $('#section4 .slide-gap').css({height:(slideW-40)});
-                    $('#section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},0); //정적으로 반응형 할 경우
-                    // $('#section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},600); //동적으로 반응형 할 경우
+                    $('#main #section4 .slide-wrap').css({width:(slideW*totN),marginLeft:-(slideW*3)});
+                    $('#main #section4 .slide').css({width:slideW,height:slideW});
+                    $('#main #section4 .slide-gap').css({height:(slideW-40)});
+                    $('#main #section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},0); //정적으로 반응형 할 경우
+                    // $('#main #section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},600); //동적으로 반응형 할 경우
                 }
                 setTimeout(resizeFn,10); //로딩 / 새로고침시 실행 once(1번만 실행)
 
@@ -479,14 +477,14 @@
 
                 //1. main slide Fn
                 function mainSlideFn(){
-                    $('#section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},600,'easeInOutExpo',function(){
+                    $('#main #section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},600,'easeInOutExpo',function(){
                         if(cnt>3){
                             cnt=0;
                         }
                         if(cnt<0){
                             cnt=3;
                         }
-                        $('#section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},0);
+                        $('#main #section4 .slide-wrap').stop().animate({left:-(slideW*cnt)},0);
                     });
                     pageBtnFn();
                 }
@@ -504,17 +502,17 @@
                 }
 
                 //3. touch swipe Event
-                $('#section4 .slide-container').swipe({
+                $('#main #section4 .slide-container').swipe({
                     
                     swipeLeft: function(){
                         timerControlFn();
-                        if(!$('#section4 .slide-wrap').is(':animated')){
+                        if(!$('#main #section4 .slide-wrap').is(':animated')){
                             nextCountSlideFn();
                         }
                     },
                     swipeRight: function(){
                         timerControlFn();
-                        if(!$('#section4 .slide-wrap').is(':animated')){
+                        if(!$('#main #section4 .slide-wrap').is(':animated')){
                             prevCountSlideFn();
                         }
                     }
@@ -529,13 +527,13 @@
                     if(z<0){
                         z=3;
                     }
-                    $('#section4 .page-btn').removeClass('addPage');
-                    $('#section4 .page-btn').eq(z).addClass('addPage');
+                    $('#main #section4 .page-btn').removeClass('addPage');
+                    $('#main #section4 .page-btn').eq(z).addClass('addPage');
                 }
 
                 //5. page btn click Event
                     //메인 함수와 직접 연동
-                $('#section4 .page-btn').each(function(index){
+                $('#main #section4 .page-btn').each(function(index){
                     $(this)
                         .on('click', function(event){
                             event.preventDefault();
@@ -568,9 +566,11 @@
                 }
 
         },
-        section5Fn: function(){
 
-        },
+        //login page//////////////////////////////////////////////////////////////////////
+        loginFormFn: function(){
+            
+        }
     };
     jason.init();
 })(jQuery,window,document);
