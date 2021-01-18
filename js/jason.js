@@ -8,6 +8,7 @@
             that.section3Fn();
             that.section4Fn();
             that.loginFormFn();
+            that.main1_1Fn();
         },
         headerFn: function(){
             var winW = $(window).innerWidth();
@@ -564,12 +565,40 @@
                         }
                     },1000);
                 }
-
         },
-
         //login page//////////////////////////////////////////////////////////////////////
         loginFormFn: function(){
             
+        },
+        //main1-1 page//////////////////////////////////////////////////////////////////////
+        main1_1Fn: function(){
+            //section2 .wrap의 넓이에 따른 .img-wrap의 높이 설정 
+            var section2WrapW = $('#main1-1 #section2 .wrap').innerWidth();
+            var section2ImgWrap = $('#main1-1 #section2 .img-wrap');
+            var winW = $(window).innerWidth();
+            var n = 3;
+            
+            function resizeFn(){
+                section2WrapW = $('#main1-1 #section2 .wrap').innerWidth();
+
+                if( winW > 1280 ){
+                    n = 3;
+                }
+                else if( winW > 860 ){
+                    n = 2;
+                }
+                else{
+                    n = 1;
+                }
+                section2ImgWrap.css({height:(section2WrapW/n)*0.689984636}); //갤러리 이미지박스 높이
+
+            };
+
+            setTimeout(resizeFn,10);
+
+            $(window).resize(function(){
+                resizeFn();
+            });
         }
     };
     jason.init();

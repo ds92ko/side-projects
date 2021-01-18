@@ -25,6 +25,9 @@
     #login #section2 .wrap .gap .container .content > ul > li {float:left;}
     #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h3 {font-size:17px;}
     #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h2 {font-size:35px;}
+
+    #main1-1 #section2 .wrap .gap .container .content .gallery-wrap li {width:50%;}
+    /* #main1-1 #section2 .wrap .gap .container .content .gallery-wrap li .gallery-gap .img-wrap {height:381.59px;} */
 }
 
 @media all and (max-width:1024px){
@@ -88,6 +91,11 @@
     #login #section2 .wrap .gap .container .content > ul > li:nth-child(2) {width:80%;min-width:320px;}
     #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h3 {font-size:16px;}
     #login #section2 .wrap .gap .container .content > ul > li:nth-child(1) .content-gap .title h2 {font-size:30px;}
+}
+
+@media all and (max-width:860px){
+    #main1-1 #section2 .wrap .gap .container .content .gallery-wrap li {width:100%;}
+    /* #main1-1 #section2 .wrap .gap .container .content .gallery-wrap li .gallery-gap .img-wrap {height:533.3868px;} */
 }
 
 @media all and (max-width:780px){
