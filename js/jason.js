@@ -577,9 +577,10 @@
             var section2ImgWrap = $('#main1-1 #section2 .img-wrap');
             var winW = $(window).innerWidth();
             var n = 3;
-            
+
             function resizeFn(){
                 section2WrapW = $('#main1-1 #section2 .wrap').innerWidth();
+                n = 3;
 
                 if( winW > 1280 ){
                     n = 3;
@@ -591,7 +592,7 @@
                     n = 1;
                 }
                 section2ImgWrap.css({height:(section2WrapW/n)*0.689984636}); //갤러리 이미지박스 높이
-
+                
             };
 
             setTimeout(resizeFn,10);
