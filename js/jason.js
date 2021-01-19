@@ -591,7 +591,7 @@
                 else{
                     n = 1;
                 }
-                section2ImgWrap.css({height:(section2WrapW/n)*0.689984636}); //갤러리 이미지박스 높이
+                section2ImgWrap.css({height:(section2WrapW/n)*0.55}); //갤러리 이미지박스 높이
                 
             };
 
