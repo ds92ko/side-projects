@@ -77,33 +77,33 @@
 */
     //방법2 each() 메서드 활용 버튼 배열 처리
     //$(".main-btn").each();
-    // $(".main-btn").each(function(index){
-    //     $(this).on({
-    //         click:function(){
-    //             if(index==0){
-    //                 location.href="https://www.starbucks.co.kr/coffee/index.do"
-    //             }
-    //             else if(index==1){
-    //                 location.href="https://www.starbucks.co.kr/menu/index.do"
-    //             }
-    //             else if(index==2){
-    //                 location.href="https://www.starbucks.co.kr/store/index.do"
-    //             }
-    //             else if(index==3){
-    //                 location.href="https://www.starbucks.co.kr/responsibility/index.do"
-    //             }
-    //             else if(index==4){
-    //                 location.href="https://www.starbucks.co.kr/msr/index.do"
-    //             }
-    //             else if(index==5){
-    //                 //_self
-    //                 //location.href="https://www.starbucks.co.kr/whats_new/index.do"
-    //                 //_blank
-    //                 window.open("https://www.starbucks.co.kr/whats_new/index.do");
-    //             }
-    //         }
-    //     });
-    // });
+    $(".main-btn").each(function(index){
+        $(this).on({
+            click:function(){
+                if(index==0){
+                    location.href="https://www.starbucks.co.kr/coffee/index.do"
+                }
+                else if(index==1){
+                    location.href="https://www.starbucks.co.kr/menu/index.do"
+                }
+                else if(index==2){
+                    location.href="https://www.starbucks.co.kr/store/index.do"
+                }
+                else if(index==3){
+                    location.href="https://www.starbucks.co.kr/responsibility/index.do"
+                }
+                else if(index==4){
+                    location.href="https://www.starbucks.co.kr/msr/index.do"
+                }
+                else if(index==5){
+                    //_self
+                    //location.href="https://www.starbucks.co.kr/whats_new/index.do"
+                    //_blank
+                    window.open("https://www.starbucks.co.kr/whats_new/index.do");
+                }
+            }
+        });
+    });
 /*
     //each() 메서드 실무에 적용하기
     //.main-btn 버튼 6개 배열 자동화(0~5)

@@ -37,9 +37,15 @@
 #wrap #main6_5 #notice .wrap .notice-table dl dd span:nth-child(2) {text-indent:15px;/* 들여쓰기 */text-align:left;}
 #wrap #main6_5 #notice .wrap .notice-table dl dd:hover span:nth-child(2) {text-decoration:underline;}
 
-#wrap #main6_5 #notice .wrap .page-wrap {width:100%;padding-bottom:100px;}
-#wrap #main6_5 #notice .wrap .page-wrap ul {text-align:center;}
+/* pageNation */
+#wrap #main6_5 #notice .wrap .page-wrap {width:100%;padding-bottom:100px;text-align:center;}
+#wrap #main6_5 #notice .wrap .page-wrap ul {display:inline-block;}
 #wrap #main6_5 #notice .wrap .page-wrap ul li {display:inline-block;margin:0 6px;}
 #wrap #main6_5 #notice .wrap .page-wrap ul li a {font-size:12px;display:inline-block;padding-bottom:3px;border-bottom:1px solid transparent;}
 #wrap #main6_5 #notice .wrap .page-wrap ul li a:hover {border-bottom:1px solid #000;color:#000;font-weight:bold;}
-#wrap #main6_5 #notice .wrap .page-wrap ul li.addCurrent a {border-bottom:1px solid #000;color:#000;font-weight:bold;}
+#wrap #main6_5 #notice .wrap .page-wrap ul li a.addCurrent {border-bottom:1px solid #000;color:#000;font-weight:bold;}
+
+/* 그룹단위 화살버튼 */
+#wrap #main6_5 #notice .wrap .page-wrap span {display:inline-block;width:28px;height:27px;margin:0 5px;}
+#wrap #main6_5 #notice .wrap .page-wrap span a {display:inline-block;}
+#wrap #main6_5 #notice .wrap .page-wrap span a img {width:100%;}
