@@ -68,6 +68,7 @@
 #main #section1 .wrap .gap .container .next-btn i {position:relative;font-size:40px;}
 #main #section1 .wrap .gap .container .next-btn:hover i {animation:motion .3s linear 0s infinite alternate;} @keyframes motion {0% {top:-5px;} 100% {top:5px;}}
 
+/* section common */
 #main .section {width:100%;height:auto;overflow:hidden;padding:170px 0;}
 #main .section .wrap {width:100%;max-width:1600px;height:100%;margin:0 auto;}
 #main .section .wrap .gap {height:100%;margin:0 100px;}
@@ -96,14 +97,12 @@
 #main #section2 .content .right .license ul {width:100%;}
 #main #section2 .content .right .license ul li {font-size:15px;margin-bottom:10px;}
 
-
 /* skills */
 #main #section3 {position:relative;width:100%;overflow:hidden;background:#f2f5fa;}
 #main #section3 .bg {animation:slide 3s ease-in-out infinite alternate;background-image:linear-gradient(-60deg, #fcf76a 50%, #14a79c 50%);z-index:1;position:absolute;top:0;right:-50%;bottom:0;left:-50%;opacity:.3;}
 #main #section3 .bg1 {animation-direction:alternate-reverse;animation-duration:4s;}
 #main #section3 .bg2 {animation-duration:5s;} @keyframes slide {0% {transform:translateX(-25%);} 100% {transform:translateX(25%);}}
 #main #section3 .wrap {z-index:2;position:relative;}
-
 #main #section3 .content ul {position:relative;width:100%;background:#fff;box-shadow:0 0 25px 3px rgba(0,0,0,.15);padding-top:50px;}
 #main #section3 .content ul li {float:left;width:33.333%;text-align:center;}
 #main #section3 .content ul li img {width:120px;margin-bottom:10px;}
@@ -142,6 +141,7 @@
 #main #section11 {background:url(../img/peripera_bg.jpg) no-repeat 0% 50% fixed;background-size:cover;}
 #peripera #section1 {background:url(../img/peripera_bg.jpg) no-repeat 0% 50% fixed;background-size:cover;}
 
+/* works common */
 #main .works {position:relative;width:100%;height:auto;overflow:hidden;padding:170px 0;}
 #main .works:after {z-index:1;position:absolute;content:'';display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.5);}
 #main .works .wrap {z-index:2;position:relative;width:100%;max-width:1900px;height:100%;margin:0 auto;}
@@ -208,6 +208,7 @@
 #main #section12 .content > div .img-wrap p span:nth-child(7) {color:#6cf3ff;}
 #main #section12 .content > div .img-wrap p span:nth-child(8) {color:#6cffdd;}
 
+/* sub page */
 .sub #section1 {position:relative;width:100%;height:auto;overflow:hidden;padding:170px 0;}
 .sub #section1:after {z-index:1;position:absolute;content:'';display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.5);}
 .sub #section1 .wrap {z-index:2;position:relative;width:100%;max-width:1900px;height:100%;margin:0 auto;}

@@ -19,10 +19,8 @@
         headerFn: function(){
             var winW = $(window).innerWidth();
             var winH = $(window).innerHeight();
-            var scroll = false;
             var m = 0;
             var t = 0;
-
             
             ////////////////////////////// Resize //////////////////////////////
             function resizeFn(){
@@ -142,8 +140,6 @@
         section1Fn: function(){
             var winW = $(window).innerWidth();
             var winH = $(window).innerHeight();
-            var n = $('section').length;
-            var wheelDelta = null;
 
             ////////////////////////////// Resize //////////////////////////////
             function resizeFn(){
@@ -159,48 +155,6 @@
 
             setTimeout(resizeFn,10);
             
-            ////////////////////////////// Mouse Wheel Event //////////////////////////////
-            // $('section').each(function(index){
-            //     $(this).on('mousewheel',function(event){
-            //         event.preventDefault();
-            //         if(event.originalEvent.wheelDelta){
-            //             wheelDelta = event.originalEvent.wheelDelta;
-            //         }
-            //         else{
-            //             wheelDelta = event.detail*(-1*40);
-            //         }
-            //         wheelDelta = event.originalEvent.wheelDelta;
-            //         if( wheelDelta < 0 ){
-            //             if(index < n-1){
-            //                 $('html, body').stop().animate({ scrollTop: $(this).next().offset().top },700,'easeInOutSine');
-            //             }
-            //         }
-            //         else{
-            //             if(index > 0){
-            //                 $('html, body').stop().animate({ scrollTop: $(this).prev().offset().top },700,'easeInOutSine');
-            //             }
-            //         }
-            //     });
-            // });
-            
-            ////////////////////////////// Mobile Mouse Wheel Event //////////////////////////////
-            // $('section').each(function(index){
-            //     $(this).bind('touchstart',function(event){
-            //         event.stopPropagation();
-            //         touchStart = event.originalEvent.touches[0].clientY;
-            //     });
-            //     $(this).bind('touchend',function(event){
-            //         event.stopPropagation();
-            //         touchEnd = event.originalEvent.changedTouches[0].clientY;
-            //         if( touchStart > touchEnd+5 ){
-            //             $('html, body').stop().animate({ scrollTop: $(this).next().offset().top },700,'easeInOutSine');
-            //         }
-            //         else if( touchStart < touchEnd-5 ){
-            //             $('html, body').stop().animate({ scrollTop: $(this).prev().offset().top },700,'easeInOutSine');
-            //         }
-            //     });
-            // });
-
             ////////////////////////////// Mouse Move Event //////////////////////////////
             $('#section1').on('mousemove',function(event){
                 var x = ($(window).width()/2) - event.pageX;
@@ -247,7 +201,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section2').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section2').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -289,7 +243,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section3').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section3').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -349,7 +303,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section4').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section4').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -376,10 +330,9 @@
                 $('#section5 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section5 .title').stop().removeClass('addTitle');
                     $('#section5 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -398,14 +351,13 @@
             function animationFn(){
                 $('#section5 .title').stop().removeClass('addTitle');
                 $('#section5 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section5').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section5').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -432,10 +384,9 @@
                 $('#section6 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section6 .title').stop().removeClass('addTitle');
                     $('#section6 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -454,14 +405,13 @@
             function animationFn(){
                 $('#section6 .title').stop().removeClass('addTitle');
                 $('#section6 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section6').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section6').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -488,10 +438,9 @@
                 $('#section7 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section7 .title').stop().removeClass('addTitle');
                     $('#section7 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -510,14 +459,13 @@
             function animationFn(){
                 $('#section7 .title').stop().removeClass('addTitle');
                 $('#section7 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section7').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section7').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -544,10 +492,9 @@
                 $('#section8 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section8 .title').stop().removeClass('addTitle');
                     $('#section8 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -566,14 +513,13 @@
             function animationFn(){
                 $('#section8 .title').stop().removeClass('addTitle');
                 $('#section8 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section8').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section8').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -600,10 +546,9 @@
                 $('#section9 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section9 .title').stop().removeClass('addTitle');
                     $('#section9 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -622,14 +567,13 @@
             function animationFn(){
                 $('#section9 .title').stop().removeClass('addTitle');
                 $('#section9 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section9').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section9').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -656,10 +600,9 @@
                 $('#section10 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section10 .title').stop().removeClass('addTitle');
                     $('#section10 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -678,14 +621,13 @@
             function animationFn(){
                 $('#section10 .title').stop().removeClass('addTitle');
                 $('#section10 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section10').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section10').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -712,10 +654,9 @@
                 $('#section11 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section11 .title').stop().removeClass('addTitle');
                     $('#section11 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                    $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                        $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
-                        $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                    });
+                    $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
+                    $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
 
                 if($(window).scrollTop() == 0){
@@ -734,14 +675,13 @@
             function animationFn(){
                 $('#section11 .title').stop().removeClass('addTitle');
                 $('#section11 h4').stop().delay(300).animate({opacity:1,left:0},400);
-                $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500,function(){
-                    $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
-                    $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
-                });
+                $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
+                $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section11').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section11').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -811,7 +751,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section12').offset().top -700 ){
+                if( $(this).scrollTop() >= $('#section12').offset().top -800 ){
                     if(t==0){
                         t=1;
                         animationFn();
