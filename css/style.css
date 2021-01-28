@@ -211,7 +211,7 @@
 .sub #section1 {position:relative;width:100%;height:auto;overflow:hidden;padding:170px 0;}
 .sub #section1:after {z-index:1;position:absolute;content:'';display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.5);}
 .sub #section1 .wrap {z-index:2;position:relative;width:100%;max-width:1900px;height:100%;margin:0 auto;}
-.sub #section1 .wrap .gap {height:100%;margin:0 100px;}
+.sub #section1 .wrap .gap {height:100%;margin:0 20px;}
 .sub #section1 .wrap .gap .container {width:100%;height:100%;}
 .sub #section1 .wrap .gap .container .title-wrap {text-align:center;}
 .sub #section1 .wrap .gap .container .title-wrap h3 {position:relative;font-size:30px;color:#fff;font-weight:400;padding-bottom:50px;}
@@ -237,9 +237,10 @@
 .sub .portfolio .wrap .gap .container .title:before {position:absolute;content:'';display:block;top:0;left:0;background:#14a79c;width:13px;height:100%;}
 .sub .portfolio .wrap .gap .container .title h3 {font-size:60px;font-weight:500;}
 .sub .portfolio .wrap .gap .container .title h2 {font-size:40px;font-weight:700;color:#000;}
+.sub .portfolio .wrap .gap .container .title h2 br {display:none;}
 .sub .portfolio .wrap .gap .container .content {width:100%;}
 .sub .portfolio .wrap .gap .container .content .btn-wrap {position:relative;margin-bottom:30px;}
-.sub .portfolio .wrap .gap .container .content .btn-wrap a {position:relative;display:inline-block;font-size:20px;background:#14a79c;/* border:2px solid #14a79c; */padding:13px 22px;color:#fff;font-weight:500;overflow:hidden;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap a {position:relative;display:inline-block;font-size:20px;background:#14a79c;padding:13px 22px;color:#fff;font-weight:500;overflow:hidden;}
 .sub .portfolio .wrap .gap .container .content .btn-wrap a:hover:after {content:'';background:#fcf76a;z-index:1;position:absolute;width:70px;height:100%;top:0;left:-70px;animation:line-bar 0.5s forwards;transform:skewX(-40deg);transform-origin:top right;}
 .sub .portfolio .wrap .gap .container .content .btn-wrap a span {z-index:2;position:relative;}
 .sub .portfolio .wrap .gap .container .content .btn-wrap a i {z-index:2;position:relative;animation:motion1 .5s linear 0s infinite alternate;}

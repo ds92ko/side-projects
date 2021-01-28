@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @media all and (max-width:1500px){
-    /* .logo-bg {background-position:5% 90%;background-size:30%;} */
     #header .wrap .gap .container .right #nav .nav-wrap ul li a {font-size:30px;}
     #main #section1 .wrap .gap .container .content .title h2 {font-size:50px;}
     #main #section1 .wrap .gap .container .content ul {margin-top:70px;}
@@ -26,11 +25,22 @@
     #main .works .wrap .gap .container .title-wrap h4 {font-size:30px;}
     #main .works .wrap .gap .container .title-wrap h5 {font-size:15px;}
     #main .works .wrap .gap .container .content-wrap {width:60%;}
+
+    .sub #section1 {padding:150px 0;}
+
+    .sub #section2 {padding:130px 0;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:35px;}
+    
+    .sub .portfolio {padding:130px 0;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:55px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:35px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap li {font-size:13px;}
 }
 
 @media all and (max-width:1350px){
     #main .works .wrap .gap .container .title-wrap {float:none;margin-bottom:100px;}
     #main .works .wrap .gap .container .content-wrap {float:none;width:100%;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:80%;}
 }
 
 @media all and (max-width:1200px){
@@ -53,6 +63,15 @@
     #main .works {padding:120px 0;}
     #main .works .wrap .gap .container .title-wrap {margin-bottom:80px;}
     #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:80px;}
+
+    .sub #section1 {padding:120px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:25px;padding-bottom:40px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {bottom:-20px;width:90px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:65px;}
+
+    .sub #section2 {padding:110px 0;}
+    .sub .portfolio {padding:110px 0;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap li {font-size:12px;}
 }
 
 @media all and (max-width:1000px){
@@ -68,6 +87,10 @@
     #main #section12 .content ul li a i {font-size:30px;margin-right:15px;}
     #main #section12 .content ul li a p span {font-size:22px;line-height:40px;}
     #main #section12 .content > div .img-wrap {width:300px;}
+
+    .sub .portfolio .wrap .gap .container .content .btn-wrap a {font-size:18px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:90%;box-shadow:0 0 30px 3px rgba(0,0,0,.3);}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:23px;margin-bottom:45px;}
 }
 
 @media all and (max-width:960px){
@@ -98,6 +121,25 @@
     #main .works .wrap .gap .container .title-wrap h5 {font-size:13px;}
     #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:70px;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:15px;}
+
+    .sub #section1 {padding:100px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:20px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {width:75px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:55px;}
+
+    .sub #section2 {padding:90px 0;}
+    .sub #section2 .wrap .gap {margin:0 60px;}
+    .sub #section2 .wrap .gap .container .title {padding-left:22px;}
+    .sub #section2 .wrap .gap .container .title:before {width:10px;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:30px;}
+
+    .sub .portfolio {padding:90px 0;}
+    .sub .portfolio .wrap .gap {margin:0 60px;}
+    .sub .portfolio .wrap .gap .container .title {padding-left:22px;}
+    .sub .portfolio .wrap .gap .container .title:before {width:10px;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:50px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:30px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:80px;}
 }
 
 @media all and (max-width:770px){
@@ -137,6 +179,20 @@
 
     #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:50px;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:13px;}
+
+    .sub #section1 {padding:80px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:50px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 br {display:block;}
+
+    .sub #section2 {padding:70px 0;}
+    .sub #section2 .wrap .gap .container .title {float:none;margin-bottom:50px;}
+    .sub #section2 .wrap .gap .container .content {float:none;width:100%;}
+
+    .sub .portfolio {padding:70px 0;}
+    .sub .portfolio .wrap .gap .container .content .btn-wrap a {font-size:15px;padding:12px 18px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:70px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:100%;box-shadow:0 0 30px 3px rgba(0,0,0,.25);}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:20px;margin-bottom:40px;}
 }
 
 @media all and (max-width:600px){
@@ -174,6 +230,7 @@
     #main .works .wrap .gap .container .title-wrap .title h3 {font-size:55px;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap {width:150px;text-align:center;float:right;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap a {width:100%;display:block;margin-left:0;padding:10px;margin-bottom:7%;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {box-shadow:0 0 25px 3px rgba(0,0,0,.2);}
 }
 
 @media all and (max-width:500px){
@@ -207,6 +264,24 @@
     
     #main .works {padding:60px 0;}
     #main .works .wrap .gap {margin:0 30px;}
+
+    .sub #section1 {padding:60px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:18px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {width:60px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:40px;}
+
+    .sub #section2 {padding:50px 0;}
+    .sub #section2 .wrap .gap {margin:0 30px;}
+    .sub #section2 .wrap .gap .container .title {margin-bottom:30px;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:25px;}
+
+    .sub .portfolio {padding:50px 0;}
+    .sub .portfolio .wrap .gap {margin:0 30px;}
+    .sub .portfolio .wrap .gap .container .title {margin-bottom:30px;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:45px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:25px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:50px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:18px;margin-bottom:35px;}
 }
 
 @media all and (max-width:450px){
@@ -220,4 +295,7 @@
     #main #section12 .content ul li:nth-child(6) a i {font-size:17px;}
     #main #section12 .content ul li:nth-child(6) a span {font-size:17px;}
     #main #section12 .content > div .img-wrap {width:225px;}
+
+    .sub .portfolio .wrap .gap .container .title h2 br {display:block;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {box-shadow:0 0 20px 3px rgba(0,0,0,.15);}
 }
