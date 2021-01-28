@@ -40,6 +40,7 @@
 #header .wrap .gap .container .right #nav .nav-wrap ul li a:hover:before {width:100%;transition:all .3s ease-in-out;}
 
 #main {z-index:2;position:relative;width:100%;}
+.sub {z-index:2;position:relative;width:100%;}
 
 /* section1 */
 #main #section1 {position:relative;width:100%;overflow:hidden;background:linear-gradient(-45deg, #ffdaaf, #ffa6df, #6ad7ff, #6cffdd);background-size:400% 400%;animation:gradient 10s ease infinite;} @keyframes gradient {0% {background-position: 0% 50%;} 50% {background-position: 100% 50%;} 100% {background-position: 0% 50%;}}
@@ -127,12 +128,19 @@
 
 /* works */
 #main #section5 {background:url(../img/hongo_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#hongo #section1 {background:url(../img/hongo_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section6 {background:url(../img/richardmille_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#richardmille #section1 {background:url(../img/richardmille_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section7 {background:url(../img/brando_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#brando #section1 {background:url(../img/brando_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section8 {background:url(../img/jason_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#jason #section1 {background:url(../img/jason_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section9 {background:url(../img/berrisom_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#berrisom #section1 {background:url(../img/berrisom_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section10 {background:url(../img/starbucks_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
+#starbucks #section1 {background:url(../img/starbucks_bg.jpg) no-repeat 50% 50% fixed;background-size:cover;}
 #main #section11 {background:url(../img/peripera_bg.jpg) no-repeat 0% 50% fixed;background-size:cover;}
+#peripera #section1 {background:url(../img/peripera_bg.jpg) no-repeat 0% 50% fixed;background-size:cover;}
 
 #main .works {position:relative;width:100%;height:auto;overflow:hidden;padding:170px 0;}
 #main .works:after {z-index:1;position:absolute;content:'';display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.5);}
@@ -198,3 +206,45 @@
 #main #section12 .content > div .img-wrap p span:nth-child(6) {color:#6ad7ff;}
 #main #section12 .content > div .img-wrap p span:nth-child(7) {color:#6cf3ff;}
 #main #section12 .content > div .img-wrap p span:nth-child(8) {color:#6cffdd;}
+
+.sub #section1 {position:relative;width:100%;height:auto;overflow:hidden;padding:170px 0;}
+.sub #section1:after {z-index:1;position:absolute;content:'';display:block;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.5);}
+.sub #section1 .wrap {z-index:2;position:relative;width:100%;max-width:1900px;height:100%;margin:0 auto;}
+.sub #section1 .wrap .gap {height:100%;margin:0 100px;}
+.sub #section1 .wrap .gap .container {width:100%;height:100%;}
+.sub #section1 .wrap .gap .container .title-wrap {text-align:center;}
+.sub #section1 .wrap .gap .container .title-wrap h3 {position:relative;font-size:30px;color:#fff;font-weight:400;padding-bottom:50px;}
+.sub #section1 .wrap .gap .container .title-wrap h3:after {position:relative;content:'';display:block;bottom:-25px;left:50%;transform:translateX(-50%);background:#fcf76a;width:100px;height:4px;}
+.sub #section1 .wrap .gap .container .title-wrap h2 {font-size:70px;color:#fff;font-weight:800;}
+.sub #section1 .wrap .gap .container .title-wrap h2 br {display:none;}
+
+.sub #section2 {width:100%;height:auto;padding:150px 0;}
+.sub #section2 .wrap {width:100%;max-width:1900px;height:100%;margin:0 auto;}
+.sub #section2 .wrap .gap {height:100%;margin:0 100px;}
+.sub #section2 .wrap .gap .container {width:100%;height:100%;}
+.sub #section2 .wrap .gap .container .title {float:left;position:relative;padding-left:25px;}
+.sub #section2 .wrap .gap .container .title:before {position:absolute;content:'';display:block;top:0;left:0;background:#14a79c;width:13px;height:100%;}
+.sub #section2 .wrap .gap .container .title h2 {font-size:40px;font-weight:700;line-height:130%;color:#000;}
+.sub #section2 .wrap .gap .container .content {float:right;width:65%;}
+.sub #section2 .wrap .gap .container .content img {width:100%;}
+
+.sub .portfolio {width:100%;height:auto;padding:150px 0;}
+.sub .portfolio .wrap {width:100%;max-width:1900px;height:100%;margin:0 auto;}
+.sub .portfolio .wrap .gap {height:100%;margin:0 100px;}
+.sub .portfolio .wrap .gap .container {width:100%;height:100%;}
+.sub .portfolio .wrap .gap .container .title {position:relative;padding-left:25px;margin-bottom:50px;}
+.sub .portfolio .wrap .gap .container .title:before {position:absolute;content:'';display:block;top:0;left:0;background:#14a79c;width:13px;height:100%;}
+.sub .portfolio .wrap .gap .container .title h3 {font-size:60px;font-weight:500;}
+.sub .portfolio .wrap .gap .container .title h2 {font-size:40px;font-weight:700;color:#000;}
+.sub .portfolio .wrap .gap .container .content {width:100%;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap {position:relative;margin-bottom:30px;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap a {position:relative;display:inline-block;font-size:20px;background:#14a79c;/* border:2px solid #14a79c; */padding:13px 22px;color:#fff;font-weight:500;overflow:hidden;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap a:hover:after {content:'';background:#fcf76a;z-index:1;position:absolute;width:70px;height:100%;top:0;left:-70px;animation:line-bar 0.5s forwards;transform:skewX(-40deg);transform-origin:top right;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap a span {z-index:2;position:relative;}
+.sub .portfolio .wrap .gap .container .content .btn-wrap a i {z-index:2;position:relative;animation:motion1 .5s linear 0s infinite alternate;}
+.sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:100px;}
+.sub .portfolio .wrap .gap .container .content .txt-wrap li {color:#666;font-size:15px;line-height:150%;}
+.sub .portfolio .wrap .gap .container .content .img-wrap {text-align:center;}
+.sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:25px;margin-bottom:50px;color:#14a79c;}
+.sub .portfolio .wrap .gap .container .content .img-wrap img {width:70%;box-shadow:0 0 30px 3px rgba(0,0,0,.35);}
+
