@@ -247,7 +247,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section2').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section2').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -289,7 +289,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section3').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section3').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -349,7 +349,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section4').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section4').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -405,7 +405,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section5').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section5').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -461,7 +461,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section6').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section6').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -517,7 +517,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section7').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section7').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -573,7 +573,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section8').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section8').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -629,7 +629,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section9').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section9').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -685,7 +685,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section10').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section10').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -741,7 +741,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section11').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section11').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
@@ -811,7 +811,7 @@
             }
 
             $(window).scroll(function(){
-                if( $(this).scrollTop() >= $('#section12').offset().top -500 ){
+                if( $(this).scrollTop() >= $('#section12').offset().top -700 ){
                     if(t==0){
                         t=1;
                         animationFn();
