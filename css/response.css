@@ -24,6 +24,7 @@
     #main .works .wrap .gap .container .title-wrap .title h2 {font-size:50px;}
     #main .works .wrap .gap .container .title-wrap h4 {font-size:30px;}
     #main .works .wrap .gap .container .title-wrap h5 {font-size:15px;}
+    #main .works .wrap .gap .container .title-wrap h5 {font-size:20px;}
     #main .works .wrap .gap .container .content-wrap {width:60%;}
 
     .sub #section1 {padding:150px 0;}
@@ -119,6 +120,7 @@
     #main .works .wrap .gap .container .title-wrap .title h2 {font-size:40px;}
     #main .works .wrap .gap .container .title-wrap h4 {font-size:25px;}
     #main .works .wrap .gap .container .title-wrap h5 {font-size:13px;}
+    #main .works .wrap .gap .container .title-wrap a {font-size:18px;margin-top:30px;padding-bottom:7px;}
     #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:70px;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:15px;}
 
@@ -176,6 +178,8 @@
     #main .works .wrap .gap .container .title-wrap .title h2 {font-size:35px;}
     #main .works .wrap .gap .container .title-wrap h4 {font-size:20px;}
     #main .works .wrap .gap .container .title-wrap h5 {font-size:12px;}
+    #main .works .wrap .gap .container .title-wrap a {margin-top:20px;}
+    #main .works .wrap .gap .container .title-wrap a:after {height:3px;}
 
     #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:50px;}
     #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:13px;}
@@ -286,6 +290,9 @@
 
 @media all and (max-width:450px){
     #main .section .title h2 {font-size:35px;}
+
+    #main .works .wrap .gap .container .title-wrap h4 {margin-bottom:5px;line-height:130%;}
+    #main .works .wrap .gap .container .title-wrap h4 br {display:block;}
     
     #main #section12 .content ul {margin-bottom:40px;}
     #main #section12 .content ul li a i {border-radius:10px;margin-right:5px;font-size:25px;}

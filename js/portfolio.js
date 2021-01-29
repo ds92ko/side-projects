@@ -326,11 +326,13 @@
                 $('#section5 .title').stop().addClass('addTitle');
                 $('#section5 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section5 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section5 a').stop().animate({opacity:0,left:-50},400);
                 $('#section5 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section5 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section5 .title').stop().removeClass('addTitle');
                     $('#section5 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section5 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -344,6 +346,7 @@
                 $('#section5 .title').stop().addClass('addTitle');
                 $('#section5 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section5 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section5 a').stop().animate({opacity:0,left:-50},400);
                 $('#section5 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section5 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -352,6 +355,7 @@
                 $('#section5 .title').stop().removeClass('addTitle');
                 $('#section5 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section5 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section5 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section5 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section5 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -380,11 +384,13 @@
                 $('#section6 .title').stop().addClass('addTitle');
                 $('#section6 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section6 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section6 a').stop().animate({opacity:0,left:-50},400);
                 $('#section6 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section6 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section6 .title').stop().removeClass('addTitle');
                     $('#section6 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section6 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -398,6 +404,7 @@
                 $('#section6 .title').stop().addClass('addTitle');
                 $('#section6 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section6 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section6 a').stop().animate({opacity:0,left:-50},400);
                 $('#section6 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section6 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -406,6 +413,7 @@
                 $('#section6 .title').stop().removeClass('addTitle');
                 $('#section6 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section6 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section6 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section6 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section6 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -434,11 +442,13 @@
                 $('#section7 .title').stop().addClass('addTitle');
                 $('#section7 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section7 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section7 a').stop().animate({opacity:0,left:-50},400);
                 $('#section7 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section7 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section7 .title').stop().removeClass('addTitle');
                     $('#section7 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section7 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -452,6 +462,7 @@
                 $('#section7 .title').stop().addClass('addTitle');
                 $('#section7 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section7 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section7 a').stop().animate({opacity:0,left:-50},400);
                 $('#section7 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section7 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -460,6 +471,7 @@
                 $('#section7 .title').stop().removeClass('addTitle');
                 $('#section7 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section7 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section7 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section7 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section7 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -488,11 +500,13 @@
                 $('#section8 .title').stop().addClass('addTitle');
                 $('#section8 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section8 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section8 a').stop().animate({opacity:0,left:-50},400);
                 $('#section8 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section8 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section8 .title').stop().removeClass('addTitle');
                     $('#section8 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section8 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -506,6 +520,7 @@
                 $('#section8 .title').stop().addClass('addTitle');
                 $('#section8 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section8 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section8 a').stop().animate({opacity:0,left:-50},400);
                 $('#section8 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section8 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -514,6 +529,7 @@
                 $('#section8 .title').stop().removeClass('addTitle');
                 $('#section8 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section8 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section8 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section8 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section8 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -542,11 +558,13 @@
                 $('#section9 .title').stop().addClass('addTitle');
                 $('#section9 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section9 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section9 a').stop().animate({opacity:0,left:-50},400);
                 $('#section9 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section9 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section9 .title').stop().removeClass('addTitle');
                     $('#section9 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section9 a').stop().delay(500).animate({opacity:1,left:0},500);
                     $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -560,6 +578,7 @@
                 $('#section9 .title').stop().addClass('addTitle');
                 $('#section9 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section9 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section9 a').stop().animate({opacity:0,left:-50},400);
                 $('#section9 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section9 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -568,6 +587,7 @@
                 $('#section9 .title').stop().removeClass('addTitle');
                 $('#section9 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section9 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section9 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section9 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section9 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -596,11 +616,13 @@
                 $('#section10 .title').stop().addClass('addTitle');
                 $('#section10 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section10 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section10 a').stop().animate({opacity:0,left:-50},400);
                 $('#section10 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section10 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section10 .title').stop().removeClass('addTitle');
                     $('#section10 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section10 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -614,6 +636,7 @@
                 $('#section10 .title').stop().addClass('addTitle');
                 $('#section10 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section10 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section10 a').stop().animate({opacity:0,left:-50},400);
                 $('#section10 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section10 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -622,6 +645,7 @@
                 $('#section10 .title').stop().removeClass('addTitle');
                 $('#section10 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section10 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section10 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section10 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section10 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
@@ -650,11 +674,13 @@
                 $('#section11 .title').stop().addClass('addTitle');
                 $('#section11 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section11 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section11 a').stop().animate({opacity:0,left:-50},400);
                 $('#section11 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section11 .btn-wrap').stop().animate({opacity:0,top:50},400,function(){
                     $('#section11 .title').stop().removeClass('addTitle');
                     $('#section11 h4').stop().delay(300).animate({opacity:1,left:0},400);
                     $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                    $('#section11 a').stop().delay(700).animate({opacity:1,left:0},500);
                     $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
                     $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
                 });
@@ -668,6 +694,7 @@
                 $('#section11 .title').stop().addClass('addTitle');
                 $('#section11 h4').stop().animate({opacity:0,left:-50},400);
                 $('#section11 h5').stop().animate({opacity:0,left:-50},400);
+                $('#section11 a').stop().animate({opacity:0,left:-50},400);
                 $('#section11 .img-wrap').stop().animate({opacity:0,top:50},400);
                 $('#section11 .btn-wrap').stop().animate({opacity:0,top:50},400);
             }
@@ -676,6 +703,7 @@
                 $('#section11 .title').stop().removeClass('addTitle');
                 $('#section11 h4').stop().delay(300).animate({opacity:1,left:0},400);
                 $('#section11 h5').stop().delay(500).animate({opacity:1,left:0},500);
+                $('#section11 a').stop().delay(700).animate({opacity:1,left:0},500);
                 $('#section11 .img-wrap').stop().animate({opacity:1,top:0},400);
                 $('#section11 .btn-wrap').stop().delay(300).animate({opacity:1,top:0},400);
             }
