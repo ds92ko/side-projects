@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media all and (max-width:1500px){
+@media all and (max-width:1530px){
     #header .wrap .gap .container .right #nav .nav-wrap ul li a {font-size:30px;}
     #main #section1 .wrap .gap .container .content .title h2 {font-size:50px;}
     #main #section1 .wrap .gap .container .content ul {margin-top:70px;}
@@ -24,8 +24,6 @@
     #main .works .wrap .gap .container .title-wrap .title h2 {font-size:50px;}
     #main .works .wrap .gap .container .title-wrap h4 {font-size:30px;}
     #main .works .wrap .gap .container .title-wrap h5 {font-size:15px;}
-    #main .works .wrap .gap .container .title-wrap h5 {font-size:20px;}
-    #main .works .wrap .gap .container .content-wrap {width:60%;}
 
     .sub #section1 {padding:150px 0;}
 
