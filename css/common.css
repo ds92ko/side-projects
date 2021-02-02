@@ -2,17 +2,13 @@
 
 * {margin:0;padding:0;border:0;vertical-align:middle;box-sizing:border-box;}
 html, body {width:100%;height:100%;}
-html {overflow-y:scroll;
-    scrollbar-arrow-color:#14a79c;
-    scrollbar-Track-Color:#f2f5fa;
-    scrollbar-base-color:transparent;
-    scrollbar-Face-Color:#14a79c;
-    scrollbar-3dLight-Color:transparent;
-    scrollbar-DarkShadow-Color:transparent;
-    scrollbar-Highlight-Color:transparent;
-    scrollbar-Shadow-Color:transparent;
+html {
+    overflow-y:scroll;overflow-x:hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-::-webkit-scrollbar {width:0;}
+::-webkit-scrollbar {display: none;}
+
 body {font:normal 14px/1 'Montserrat';color:#000;background:#f2f5fa;}
 ul, li {list-style:none;cursor:default;}
 a {color:#595959;text-decoration:none;}
