@@ -179,6 +179,15 @@
             setTimeout(init,100);
 
             function init(){
+                $('#section2 .title').stop().animate({opacity:0,left:-100},400);
+                $('#section2 .left').stop().animate({opacity:0,left:-100},400);
+                $('#section2 .right').stop().animate({opacity:0,left:-100},400,function(){
+                    $('#section2 .title').stop().animate({opacity:1,left:0},500,function(){
+                        $('#section2 .left').stop().animate({opacity:1,left:0},500,function(){
+                            $('#section2 .right').stop().animate({opacity:1,left:0},500);
+                        });
+                    });
+                });
                 
                 if($(window).scrollTop() == 0){
                     formatFn();
@@ -197,7 +206,6 @@
                         $('#section2 .right').stop().animate({opacity:1,left:0},500);
                     });
                 });
-                
             }
 
             $(window).scroll(function(){
