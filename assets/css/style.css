@@ -83,13 +83,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #topbar i {
   color: #ffb03b;
-  line-height: 0;
+  line-height: 1.3;
 }
 
 #topbar i span {
   color: #fff;
   font-style: normal;
   padding-left: 5px;
+}
+
+@media (max-width: 460px) {
+  #topbar i span strong {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -875,6 +881,24 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #ffa012;
+}
+
+@media (max-width: 1399px) {
+  .contact .info p strong {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .info p strong {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 336px) {
+  .contact .info p strong {
+    display: block;
+  }
 }
 
 @-webkit-keyframes animate-loading {
