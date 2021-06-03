@@ -52,9 +52,10 @@ body {
     border-left: 10px solid rgba(74, 74, 172, 1);
 }
 
-.game-text>button:hover{
+.game-text>button:hover {
     color: rgba(0, 5, 157, 1);
 }
+
 
 /* game wrap */
 
@@ -90,7 +91,7 @@ body {
 }
 
 .castle::before {
-    content:'';
+    content: '';
     display: block;
     position: absolute;
     width: 5px;
@@ -102,7 +103,7 @@ body {
 }
 
 .castle::after {
-    content:'';
+    content: '';
     display: block;
     position: absolute;
     width: 2rem;
@@ -118,7 +119,7 @@ body {
     width: 2rem;
     height: 2rem;
     background-color: rgba(222, 109, 3, 1);
-    transform: rotate(-40deg) skew(20deg,10deg);
+    transform: rotate(-40deg) skew(20deg, 10deg);
     top: -0.35rem;
     left: 1.5rem;
 }
@@ -145,8 +146,8 @@ body {
 }
 
 .game-title::before,
-.game-title::after{
-    content:'';
+.game-title::after {
+    content: '';
     display: block;
     position: absolute;
     width: 1rem;
@@ -180,7 +181,7 @@ body {
 
 .game-title .symbol::after {
     position: absolute;
-    content:'';
+    content: '';
     width: 3px;
     height: 3px;
     top: 50%;
@@ -208,7 +209,7 @@ body {
 }
 
 .game-title h1::before {
-    content:'';
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -222,17 +223,18 @@ body {
 }
 
 .game-title h1::after {
-    content:'';
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
     height: 1rem;
-    top: calc(100% + 5px );
+    top: calc(100% + 5px);
     left: 0;
     bottom: calc(100% - 7rem - 5px);
     background: rgba(149, 146, 173, 1);
     z-index: 1;
 }
+
 
 /* score */
 
@@ -251,6 +253,7 @@ body {
     color: rgba(0, 5, 157, 1);
 }
 
+
 /* playground */
 
 .playground {
@@ -259,8 +262,8 @@ body {
 }
 
 .playground::before,
-.playground::after{
-    content:'';
+.playground::after {
+    content: '';
     display: block;
     position: absolute;
     width: 1rem;
@@ -303,6 +306,7 @@ body {
     outline: 1px solid #333;
 }
 
+
 /* blocks */
 
 .square {
@@ -317,8 +321,12 @@ body {
     background: rgba(71, 188, 0, 1);
 }
 
-.zee {
+.zeeLeft {
     background: rgba(246, 147, 16, 1);
+}
+
+.zeeRight {
+    background: rgba(6, 73, 217, 1);
 }
 
 .elLeft {
@@ -329,18 +337,20 @@ body {
     background: rgba(221, 184, 4, 1);
 }
 
-.moving, .seized {
+.moving,
+.seized {
     display: relative;
 }
 
-.moving::after, .seized::after {
-    content:'';
+.moving::after,
+.seized::after {
+    content: '';
     display: block;
     position: absolute;
     width: 25px;
     height: 25px;
-    border-top: 5px solid rgba(255,255,255,.7);
-    border-right: 5px solid rgba(255,255,255,.3);
+    border-top: 5px solid rgba(255, 255, 255, .7);
+    border-right: 5px solid rgba(255, 255, 255, .3);
     border-bottom: 5px solid rgba(0, 0, 0, .7);
     border-left: 5px solid rgba(0, 0, 0, .1);
     box-sizing: border-box;
