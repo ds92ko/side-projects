@@ -93,7 +93,6 @@ h1 {
     margin-top: 0;
 }
 
-.task:hover,
 .completed {
     text-decoration: line-through;
 }
