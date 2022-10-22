@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {margin:0;padding:0;vertical-align:middle;border:0;} /* vertical-align:middle;하는이유 여백생기니까 */
+html, body {width:100%;height:100%;}
+html {overflow-y:scroll;}
+html.addScroll {overflow:hidden;} /* 가로 세로 스크롤바 모두 없애기 */
+body {font:normal 12px/1 "Nanum Gothic","Noto Sans KR";font-size:12px;color:#5c5c5c;background:#fff;letter-spacing:-0.6px;-webkit-text-stroke-width:0.1px;} /* 14px/1에 1하는 이유가 글자높이에 생기는 여백 없애기 */
+header, main, footer, section ,nav, aside {display:block;}
+i,em,address {font-style:normal;} /* 기본이 이탤릭 태그라서 사선으로 누워버리니까 폰트스타일 적용 */
+ul, li {list-style:none;}
+a {color:#5c5c5c;text-decoration:none;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:12px;}
+.fixedclear::after {content:"";display:block;clear:both;} /* 플로팅 핵(hack) */
+.hide {display:none;} /* h태그 감출때 */
+.blind {display:block;text-indent:-10000px;overflow:hidden;} /* 글자 블라인드처리 */
+#skip {z-index:2;position:absolute;top:0;left:0;width:100%;-webkit-text-stroke-width:0;}
+#skip li {width:100%;}
+#skip li a {display:block;line-height:0;font-size:0;text-align:center;background:#5c5c5c;color:#fff;}
+#skip li a:focus {line-height:30px;font-size:15px;}
+#wrap {z-index:1;position:relative;width:100%;overflow:hidden;}
