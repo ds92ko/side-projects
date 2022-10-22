@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+@media all and (max-width:1530px){
+    #header .wrap .gap .container .right #nav .nav-wrap ul li a {font-size:30px;}
+    #main #section1 .wrap .gap .container .content .title h2 {font-size:50px;}
+    #main #section1 .wrap .gap .container .content ul {margin-top:70px;}
+    #main #section1 .wrap .gap .container .content ul li {font-size:170px;}
+
+    #main .section {padding:150px 0;}
+    #main .section .title {float:none;display:inline-block;margin-bottom:70px;}
+    #main .section .title h2 {font-size:50px;}
+    #main .section .content {float:none;width:100%;}
+
+    #main #section2 .content .left .img-wrap {margin-bottom:40px;}
+    #main #section2 .content .left .img-wrap img {width:300px;}
+    #main #section2 .content .right .education {margin-bottom:40px;}
+    #main #section2 .content .right .education h3 {font-size:35px;margin-bottom:5px;}
+    #main #section2 .content .right .education h3 strong {font-size:50px;}
+    #main #section2 .content .right .license h3 {font-size:35px;margin-bottom:5px;}
+    #main #section2 .content .right .license h3 strong {font-size:50px;}
+
+    #main .works {padding:150px 0;}
+    #main .works .wrap .gap .container .title-wrap .title h3 {font-size:90px;}
+    #main .works .wrap .gap .container .title-wrap .title h2 {font-size:50px;}
+    #main .works .wrap .gap .container .title-wrap h4 {font-size:30px;}
+    #main .works .wrap .gap .container .title-wrap h5 {font-size:15px;}
+
+    .sub #section1 {padding:150px 0;}
+
+    .sub #section2 {padding:130px 0;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:35px;}
+    
+    .sub .portfolio {padding:130px 0;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:55px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:35px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap li {font-size:13px;}
+}
+
+@media all and (max-width:1350px){
+    #main .works .wrap .gap .container .title-wrap {float:none;margin-bottom:100px;}
+    #main .works .wrap .gap .container .content-wrap {float:none;width:100%;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:80%;}
+}
+
+@media all and (max-width:1200px){
+    #header .wrap .gap .container .right #nav .nav-wrap ul li a {font-size:25px;}
+    #main #section1 .wrap .gap .container .content .title h2 {font-size:40px;}
+    #main #section1 .wrap .gap .container .content ul {margin-top:60px;}
+    #main #section1 .wrap .gap .container .content ul li {font-size:130px;}
+    #main #section1 .wrap .gap .container .next-btn i {font-size:35px;}
+
+    #main .section {padding:120px 0;}
+
+    #main #section3 .content ul li img {width:100px;}
+    
+    #main #section12 .content ul li {padding-bottom:10px;}
+    #main #section12 .content ul li a p span {font-size:25px;}
+    #main #section12 .content ul li:nth-child(6) a i {font-size:23px;}
+    #main #section12 .content ul li:nth-child(6) a span {font-size:23px;}
+    #main #section12 .content > div .img-wrap {width:350px;}
+
+    #main .works {padding:120px 0;}
+    #main .works .wrap .gap .container .title-wrap {margin-bottom:80px;}
+    #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:80px;}
+
+    .sub #section1 {padding:120px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:25px;padding-bottom:40px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {bottom:-20px;width:90px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:65px;}
+
+    .sub #section2 {padding:110px 0;}
+    .sub .portfolio {padding:110px 0;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap li {font-size:12px;}
+}
+
+@media all and (max-width:1000px){
+    
+    #main #section2 .content .left {float:none;width:100%;margin-bottom:40px;}
+    #main #section2 .content .right {float:none;width:100%;}
+    #main #section2 .content .right .education {text-align:right;}
+
+    #main #section4 .content ul li {width:30%;}
+    #main #section4 .content ul li:nth-child(1) {width:35%;}
+    #main #section4 .content ul li p {font-size:13px;}
+    
+    #main #section12 .content ul li a i {font-size:30px;margin-right:15px;}
+    #main #section12 .content ul li a p span {font-size:22px;line-height:40px;}
+    #main #section12 .content > div .img-wrap {width:300px;}
+
+    .sub .portfolio .wrap .gap .container .content .btn-wrap a {font-size:18px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:90%;box-shadow:0 0 30px 3px rgba(0,0,0,.3);}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:23px;margin-bottom:45px;}
+}
+
+@media all and (max-width:960px){
+    #header .wrap .gap .container .right #nav .nav-wrap-bg {right:-100%;width:100%;}
+    #header .wrap .gap .container .right #nav .nav-wrap {right:-100%;width:100%;}
+    
+    #main #section1 .wrap .gap .container .content .title h2 {font-size:30px;}
+    #main #section1 .wrap .gap .container .content ul {margin-top:50px;}
+    #main #section1 .wrap .gap .container .content ul li {font-size:100px;}
+    #main #section1 .wrap .gap .container .next-btn i {font-size:30px;}
+
+    #main .section {padding:100px 0;}
+    #main .section .wrap .gap {margin:0 50px;}
+
+    #main #section2 .content .left .img-wrap img {width:250px;}
+
+    #main #section3 .content ul li {width:50%;}
+    #main #section3 .content ul li img {width:90px;}
+
+    #main #section4 .content ul li h3 {font-size:27px;}
+    
+    #main .works {padding:100px 0;}
+    #main .works .wrap .gap {margin:0 50px;}
+    #main .works .wrap .gap .container .title-wrap {margin-bottom:70px;}
+    #main .works .wrap .gap .container .title-wrap .title h3 {font-size:80px;}
+    #main .works .wrap .gap .container .title-wrap .title h2 {font-size:40px;}
+    #main .works .wrap .gap .container .title-wrap h4 {font-size:25px;}
+    #main .works .wrap .gap .container .title-wrap h5 {font-size:13px;}
+    #main .works .wrap .gap .container .title-wrap a {font-size:18px;margin-top:30px;padding-bottom:7px;}
+    #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:70px;}
+    #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:15px;}
+
+    .sub #section1 {padding:100px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:20px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {width:75px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:55px;}
+
+    .sub #section2 {padding:90px 0;}
+    .sub #section2 .wrap .gap {margin:0 60px;}
+    .sub #section2 .wrap .gap .container .title {padding-left:22px;}
+    .sub #section2 .wrap .gap .container .title:before {width:10px;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:30px;}
+
+    .sub .portfolio {padding:90px 0;}
+    .sub .portfolio .wrap .gap {margin:0 60px;}
+    .sub .portfolio .wrap .gap .container .title {padding-left:22px;}
+    .sub .portfolio .wrap .gap .container .title:before {width:10px;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:50px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:30px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:80px;}
+}
+
+@media all and (max-width:770px){
+    #header {height:50px;}
+    #header .wrap .gap {margin:0 20px;}
+    #header .wrap .gap .container .left .logo {padding:5px 0;}
+    #header .wrap .gap .container .left .logo .logo-btn {width:40px;}
+    #header .wrap .gap .container .left h2 {line-height:50px;font-size:20px;}
+    #header .wrap .gap .container .left h2:before {height:25px;}
+    #header .wrap .gap .container .right .nav {padding:12.5px 0;}
+    #header .wrap .gap .container .right .nav .nav-btn {width:35px;height:25px;}
+
+    #main #section1 .wrap .gap .container .content ul li {font-size:80px;}
+
+    #main .section {padding:80px 0;}
+    #main .section .title {margin-bottom:50px;}
+    #main .section .title h2 {font-size:45px;}
+
+    #main #section3 .content ul {padding-top:40px;}
+    #main #section3 .content ul li p {margin-bottom:40px;}
+
+    #main #section4 .content ul li {width:35%;}
+    #main #section4 .content ul li:nth-child(1) {width:40%;}
+    #main #section4 .content ul li p {font-size:12px;}
+
+    #main #section12 .content ul {float:none;margin-bottom:50px;}
+    #main #section12 .content > div {float:none;text-align:right;font-size:0;}
+    #main #section12 .content > div .img-wrap {display:inline-block;}
+    
+    #main .works {padding:80px 0;}
+    #main .works .wrap .gap .container .title-wrap {margin-bottom:50px;}
+    #main .works .wrap .gap .container .title-wrap .title {margin-bottom:30px;}
+    #main .works .wrap .gap .container .title-wrap .title h3 {font-size:70px;}
+    #main .works .wrap .gap .container .title-wrap .title h2 {font-size:35px;}
+    #main .works .wrap .gap .container .title-wrap h4 {font-size:20px;}
+    #main .works .wrap .gap .container .title-wrap h5 {font-size:12px;}
+    #main .works .wrap .gap .container .title-wrap a {margin-top:20px;}
+    #main .works .wrap .gap .container .title-wrap a:after {height:3px;}
+
+    #main .works .wrap .gap .container .content-wrap .img-wrap {margin-bottom:50px;}
+    #main .works .wrap .gap .container .content-wrap .btn-wrap a {font-size:13px;}
+
+    .sub #section1 {padding:80px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:50px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 br {display:block;}
+
+    .sub #section2 {padding:70px 0;}
+    .sub #section2 .wrap .gap .container .title {float:none;margin-bottom:50px;}
+    .sub #section2 .wrap .gap .container .content {float:none;width:100%;}
+
+    .sub .portfolio {padding:70px 0;}
+    .sub .portfolio .wrap .gap .container .content .btn-wrap a {font-size:15px;padding:12px 18px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:70px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {width:100%;box-shadow:0 0 30px 3px rgba(0,0,0,.25);}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:20px;margin-bottom:40px;}
+}
+
+@media all and (max-width:600px){
+    #main #section1 .wrap .gap .container .content .title h2 {font-size:25px;}
+    #main #section1 .wrap .gap .container .content ul {margin-top:40px;}
+    #main #section1 .wrap .gap .container .content ul li {font-size:65px;text-shadow:-2px -2px 0 #14a79c, 2px -2px 0 #14a79c, -2px 2px 0 #14a79c, 2px 2px 0 #14a79c;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(1)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(2)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(3)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(4)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(5)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(6)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(7)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(8)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(9)  {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li:nth-child(10) {letter-spacing:0;}
+    #main #section1 .wrap .gap .container .content ul li br {display:block;}
+    #main #section1 .wrap .gap .container .next-btn i {font-size:25px;}
+
+    #main #section3 .content ul li img {width:80px;}
+    #main #section3 .content ul li p {font-size:12px;}
+    
+    #main #section4 .content ul {height:450px;}
+    #main #section4 .content ul li {width:40%;padding:20px;}
+    #main #section4 .content ul li:nth-child(1) {width:50%;}
+    #main #section4 .content ul li:nth-child(2) {top:-5%;left:5%;}
+    #main #section4 .content ul li:nth-child(3) {top:10%;right:-5%;}
+    #main #section4 .content ul li:nth-child(4) {bottom:10%;left:-5%;}
+    #main #section4 .content ul li:nth-child(5) {bottom:-5%;right:5%;}
+
+    #main #section12 .content > div {text-align:left;}
+
+    #main .works .wrap .gap .container .title-wrap .title {padding-left:22px;}
+    #main .works .wrap .gap .container .title-wrap .title:after {width:15px;}
+    #main .works .wrap .gap .container .title-wrap .title h3 {font-size:55px;}
+    #main .works .wrap .gap .container .content-wrap .btn-wrap {width:150px;text-align:center;float:right;}
+    #main .works .wrap .gap .container .content-wrap .btn-wrap a {width:100%;display:block;margin-left:0;padding:10px;margin-bottom:7%;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {box-shadow:0 0 25px 3px rgba(0,0,0,.2);}
+}
+
+@media all and (max-width:500px){
+    #header .wrap .gap .container .left h2 {display:none;}
+
+    #main .section {padding:60px 0;}
+    #main .section .title h2 {font-size:40px;}
+
+    #main #section2 .content .left .img-wrap img {width:200px;}
+    #main #section2 .content .left .profile li {font-size:12px;}
+    #main #section2 .content .right .education {text-align:left;}
+
+    #main #section2 .content .right .education h3 {font-size:25px;}
+    #main #section2 .content .right .education h3 strong {font-size:40px;}
+    #main #section2 .content .right .education ul li span {font-size:12px;}
+    #main #section2 .content .right .license h3 {font-size:25px;}
+    #main #section2 .content .right .license h3 strong {font-size:40px;}
+    #main #section2 .content .right .license ul li {font-size:12px;}
+
+    #main #section3 .content ul li {width:100%;}
+    
+    #main #section4 .content ul {height:300px;}
+    #main #section4 .content ul li {width:100px;padding:17px;border-radius:20px;}
+    #main #section4 .content ul li:nth-child(1) {width:220px;}
+    #main #section4 .content ul li:nth-child(2) {top:0;left:5%;}
+    #main #section4 .content ul li:nth-child(3) {top:20%;right:-10%;}
+    #main #section4 .content ul li:nth-child(4) {bottom:20%;left:-10%;}
+    #main #section4 .content ul li:nth-child(5) {bottom:0;right:5%;}
+    #main #section4 .content ul li h3 {text-align:center;font-size:23px;margin-bottom:0;}
+    #main #section4 .content ul li p {display:none;}
+    
+    #main .works {padding:60px 0;}
+    #main .works .wrap .gap {margin:0 30px;}
+
+    .sub #section1 {padding:60px 0;}
+    .sub #section1 .wrap .gap .container .title-wrap h3 {font-size:18px;}
+    .sub #section1 .wrap .gap .container .title-wrap h3:after {width:60px;}
+    .sub #section1 .wrap .gap .container .title-wrap h2 {font-size:40px;}
+
+    .sub #section2 {padding:50px 0;}
+    .sub #section2 .wrap .gap {margin:0 30px;}
+    .sub #section2 .wrap .gap .container .title {margin-bottom:30px;}
+    .sub #section2 .wrap .gap .container .title h2 {font-size:25px;}
+
+    .sub .portfolio {padding:50px 0;}
+    .sub .portfolio .wrap .gap {margin:0 30px;}
+    .sub .portfolio .wrap .gap .container .title {margin-bottom:30px;}
+    .sub .portfolio .wrap .gap .container .title h3 {font-size:45px;}
+    .sub .portfolio .wrap .gap .container .title h2 {font-size:25px;}
+    .sub .portfolio .wrap .gap .container .content .txt-wrap {margin-bottom:50px;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap h3 {font-size:18px;margin-bottom:35px;}
+}
+
+@media all and (max-width:450px){
+    #main .section .title h2 {font-size:35px;}
+
+    #main .works .wrap .gap .container .title-wrap h4 {margin-bottom:5px;line-height:130%;}
+    #main .works .wrap .gap .container .title-wrap h4 br {display:block;}
+    
+    #main #section12 .content ul {margin-bottom:40px;}
+    #main #section12 .content ul li a i {border-radius:10px;margin-right:5px;font-size:25px;}
+    #main #section12 .content ul li a p span {font-size:17px;line-height:35px;}
+    #main #section12 .content ul li:nth-child(6) {margin-top:20px;}
+    #main #section12 .content ul li:nth-child(6) a {padding:10px 10px 10px 20px;}
+    #main #section12 .content ul li:nth-child(6) a i {font-size:17px;}
+    #main #section12 .content ul li:nth-child(6) a span {font-size:17px;}
+    #main #section12 .content > div .img-wrap {width:225px;}
+
+    .sub .portfolio .wrap .gap .container .title h2 br {display:block;}
+    .sub .portfolio .wrap .gap .container .content .img-wrap img {box-shadow:0 0 20px 3px rgba(0,0,0,.15);}
+}
